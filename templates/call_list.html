@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Call List</title>
+    <title>Call List Blue</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,12 +34,15 @@
       </tr>
   </thead>
   <tbody>
+   {% for person in people %}
+
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
+      <td>{{ person.first }}</td>
       <td>Otto</td>
       <td>415-999-2345</td>
     </tr>
+   {% endfor %}
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
