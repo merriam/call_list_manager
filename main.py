@@ -9,9 +9,8 @@ def hello_world():
 
 @app.route("/mock")
 def show_mock():
-  return render_template('/Users/charlesmerriam/p/call/html/call_list.html')
+  return render_template('call_list.html')
 
 
 if __name__ == '__main__':
   app.run(debug=True)
-
